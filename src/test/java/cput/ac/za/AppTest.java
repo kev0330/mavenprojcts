@@ -1,6 +1,5 @@
-package cput.ac.za;
 
-import static org.junit.Assert.assertTrue;
+import static junit.framework.TestCase.assertEquals;
 
 import org.junit.Test;
 
@@ -13,8 +12,10 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void testAddition()
     {
-        assertTrue( true );
+        App app = new App();
+        int result = app.calculate(3,4);
+        assertEquals(7,result);
     }
 }
